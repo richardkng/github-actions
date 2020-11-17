@@ -15,6 +15,6 @@ jobs:
         uses: ./.github/actions/hello-world # Uses an action in the root directory
         id: hello
         with:
-          who-to-greet: '${{github.event.push.pusher.name}}'
+          who-to-greet: ${{github.event.push.pusher.name}}
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.time }}"
