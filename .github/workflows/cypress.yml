@@ -11,5 +11,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '12'
-      - run: npm install
-      - run: npx serve
+      - name: Clone repo
+        run: |
+          git clone git@gitlab.com:richard.ng/cypress-tutorial.git
+          cd cypress-tutorial
+      - name: Serve app
+        run: npx serve
