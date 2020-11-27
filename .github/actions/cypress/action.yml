@@ -1,0 +1,5 @@
+name: 'Cypress test'
+description: 'Cypress testing workflow'
+runs:
+  using: 'node12'
+  main: 'index.js'

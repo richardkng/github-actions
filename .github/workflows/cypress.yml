@@ -1,0 +1,15 @@
+name: Cypress test
+
+on: [push]
+
+jobs:
+  cypress_test:
+    runs-on: ubuntu-latest
+    name: A Cypress test job
+    steps:
+      - name: Install node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12'
+        run: npm install
+        run: npx serve
