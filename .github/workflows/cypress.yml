@@ -14,5 +14,5 @@ jobs:
       - name: Clone repo
         run: git clone https://gitlab.com/richard.ng/cypress-tutorial.git
       - name: Serve app
-        run: cd cypress-tutorial && npx serve
+        run: cd cypress-tutorial && npx serve && cd e2e && npm install && npm run cypress:run
 
