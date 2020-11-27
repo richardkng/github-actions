@@ -12,8 +12,7 @@ jobs:
         with:
           node-version: '12'
       - name: Clone repo
-        run: |
-          git clone https://gitlab.com/richard.ng/cypress-tutorial.git
-          cd cypress-tutorial
+        run: git clone https://gitlab.com/richard.ng/cypress-tutorial.git
       - name: Serve app
-        run: npx serve
+        run: cd cypress-tutorial && npx serve
+
