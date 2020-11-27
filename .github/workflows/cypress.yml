@@ -16,4 +16,4 @@ jobs:
       - name: Serve app
         run: cd cypress-tutorial && npx serve &
       - name: Run test
-        run: cd e2e && npm install && npm run cypress:run
+        run: cd cypress-tutorial/e2e && npm install && npm run cypress:run
