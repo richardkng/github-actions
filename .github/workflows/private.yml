@@ -10,4 +10,4 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2
         with:
-          repository: richardkng/richardkng.github.io
+          repository: richardkng/private-gha
