@@ -1,0 +1,11 @@
+name: Test pull private repo
+
+on: [push]
+
+jobs:
+  private_repo:
+    runs-on: ubuntu-latest
+    name: Test pull private repo
+    steps:
+      - name: Clone repo
+        run: git clone git@github.com:richardkng/private-gha.git
