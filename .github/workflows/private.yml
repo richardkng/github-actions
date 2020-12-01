@@ -8,4 +8,6 @@ jobs:
     name: Test pull private repo
     steps:
       - name: Clone repo
-        run: git clone https://github.com/richardkng/private-gha.git
+        uses: actions/checkout@v2
+        with:
+          repository: richardkng/richardkng.github.io
